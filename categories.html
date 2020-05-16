@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="verev tapancik">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Tel: </p>
+              </div>
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Բարի Գալուստ Գրքի Բում</p>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AM</option>
+                  <option value="RU">RU</option>
+                  <option value="EN">EN</option>
+                  <option value="EN">GR</option>
+                </select>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AMD</option>
+                  <option value="EN">RB</option>
+                  <option value="EN">US</option>
+                  <option value="EN">EUR</option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-info d-none d-lg-block col-lg-12">
+                  Կարգավորում
+                </button> 
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <a class="navbar-brand col-lg-2 col-2" href="index.html"><img src="images/book2.png" width="80px"><p></p></a>
+              <form class="form-inline d-none d-lg-block">
+                <input class="form-control mr-sm-2" type="search" placeholder="որոնել" aria-label="search">
+                <button class="btn btn-outline-success text-dark my-2 my-sm-0" type="submit">որոնել</button>
+              </form>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+                Մուտք կամ գրանցում
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog text-center">
+                  <div class="modal-content guyn1">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger" id="ModalLabel">Մուտք գործել անձնական էջ</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-center">
+                        <div class="form-group">
+                          <label for="formGroupInputModal-1">Մուտքանուն</label>
+                          <input type="text" class="form-control" id="formGroupInputModal-1" placeholder="Login">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupInputModal-2">Գաղտնաբառ</label>
+                          <input type="password" class="form-control" id="formGroupInputModal-2" placeholder="Password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                      <a href="Account.html" class="btn btn-primary m-2" role="button">Մուտք</a>
+
+                      <h5 class="text-center text-danger">Եթե նոր հաճախորդ եք, խնդրում ենք գրանցվել</h5>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal1">
+                        Գրանցում
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog text-center">
+                          <div class="modal-content guyn1">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-danger" id="ModalLabel1">Գրանցում</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="text-center">
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-1">Մուտքանուն</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-1" placeholder="Login">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-2">Գաղտնաբառ</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-3">Կրկնել գաղտնաբառը</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-3" placeholder="Repeat your password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Հեռախոսահամար</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-4" placeholder="Telephone number">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Ուղարկված ստուգիչ կոդը</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-4" placeholder="Code">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                              <a href="Account.html" class="btn btn-primary m-2" role="button">Գրանցվել և մտնել</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Գեղարվեստական 
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  </div>
+                </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ոչ գեղարվեստական
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ամսագրեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Օտար լեզվով
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Հին գրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Աուդիոգրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <nav aria-label="breadcrumb" class="row">
+          <ol class="breadcrumb mt-3 col mr-auto">
+            <li class="breadcrumb-item"><a href="#">Օտար լեզվով</a></li>
+            <li class="breadcrumb-item"><a href="#">Ռուսերեն</a></li>
+            <li class="breadcrumb-item"><a href="#">Գեղարվեստական</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ֆենթզի</li>
+          </ol>
+          <form action="" class="form-inline col-12 col-md-auto">
+            <label for="sortBy" class="mr-1 text-dark">Տեսակավորել ըստ</label>
+            <select class="custom-select" id="sortBy">
+              <option value="1">Սկզբից Ամենադիտվածները</option>
+              <option value="2">Սկզբից Նորը</option>
+              <option value="3">Սկզբից Հինը</option>
+              <option value="4">Սկզբից Թանկը</option>
+              <option value="5">Սկզբից Էժանը</option>
+            </select>
+          </form>
+        </nav>
+        <div class="row border-top guyn1">
+        <div class="d-none d-md-block col-md-4 sidebar guyn1 border-right border-left border-bottom">
+            <form>
+              <div class="accordion" id="accordion1">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Առաքման ժամկետ
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1" style="">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">2 օր</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">4 օր</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">1 շաբաթ</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">10 օր</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Հրատարակչություն
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1" style="">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">Հրատարակչություն 1</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                        <label class="custom-control-label" for="customCheck6">Հրատարակչություն 2</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                        <label class="custom-control-label" for="customCheck7">Հրատարակչություն 3</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">Հրատարակչություն 4</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Հեղինակ
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1" style="">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck9">
+                        <label class="custom-control-label" for="customCheck9">Հեղինակ 1</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck10">
+                        <label class="custom-control-label" for="customCheck10">Հեղինակ 2</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck11">
+                        <label class="custom-control-label" for="customCheck11">Հեղինակ 3</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck12">
+                        <label class="custom-control-label" for="customCheck12">Հեղինակ 4</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Կազմ
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion1" style="">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck13">
+                        <label class="custom-control-label" for="customCheck13">Փափուկ կազմ</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck14">
+                        <label class="custom-control-label" for="customCheck14">Կոշտ կազմ</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Տարեթիվ
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion1" style="">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck15">
+                        <label class="custom-control-label" for="customCheck15">Մինչև 2004</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck16">
+                        <label class="custom-control-label" for="customCheck16">2004-2008</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck17">
+                        <label class="custom-control-label" for="customCheck17">2008-2012</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck18">
+                        <label class="custom-control-label" for="customCheck18">2012-2016</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck19">
+                        <label class="custom-control-label" for="customCheck19">2017</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck20">
+                        <label class="custom-control-label" for="customCheck20">2018</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck21">
+                        <label class="custom-control-label" for="customCheck21">2019</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck22">
+                        <label class="custom-control-label" for="customCheck22">2020</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Թղթի տեսակը
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion1" style="">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck23">
+                        <label class="custom-control-label" for="customCheck23">Օֆսեթ թուղթ</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck24">
+                        <label class="custom-control-label" for="customCheck24">Դեղին թուղթ</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+        <div class="col-12 col-md-8 main border-right border-left">
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/got.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold">Ջորջ Ռ․ Ռ․ Մարտին․ <<Գահերի խաղը>></a></h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Սառույցի և կրակի երգ>> վիպաշարի առաջին մասն է</li>
+                                <li>Հեղինակ՝ Ջորջ Ռեյմոնդ Ռիչարդ Մարտին</li>
+                                <li>Հրատարակման տարեթիվ՝ 1996</li>
+                                <li>Արժանացել է՝ <<Լոկուս>> մրցանակ, <Իգնոտուս>> մրցանակ և մի շարք այլ մրցանակներ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>10000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/vedmak.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold">Անջեյ Սապկովսկի․ <<Կախարդը>></a>
+                            </h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Կախարդը>> երկու պատմվածաշարից և մեկ պենտալոգիայից բաղկացած ստեղծագործությունների շարքը՝ մեկ գրքով</li>
+                                <li>Հեղինակ՝ Անջեյ Սապկովսկի</li>
+                                <li>Հրատարակման տարեթիվ՝ 1986-1998</li>
+                                <li>Մի շարք մրցանակներ դափնեկիր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>19000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/narnia.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold">Քլայվ Ս․ Լյուիս․ <<Նարնիայի ժամանակագրություններ>></a>
+                            </h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Նարնիայի ժամանակագրություններ>> յոթ վեպից բաղկացած վիպաշարը՝ մեկ գրքով</li>
+                                <li>Հեղինակ՝ Քլայվ Սթեյփլս Լյուիս</li>
+                                <li>Հրատարակման տարեթիվ՝ 1950-1956</li>
+                                <li>Մի շարք մրցանակների դափնեկիր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>12000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/ktulxu.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold"> Հովարդ Ֆ․ Լավքրաֆտը․ <<Քթուլհու>> </a>
+                            </h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Քթուլհու>> բազմաթիվ հայտնի պատմվածքները՝ մեկ գրքով</li>
+                                <li>Հեղինակ՝  Հովարդ Ֆիլիպս Լավքրաֆտ </li>
+                                <li>Հրատարակման տարեթիվ՝ 1926</li>
+                                <li>Մի շարք մրցանակների դափնեկիր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>16000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/metro.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold">Դմիտրի Գլուխովսկի․ <<Մետրո>></a>
+                            </h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Մետրո>> Եռերգությունը՝ մեկ գրքով</li>
+                                <li>Հեղինակ՝ Դմիտրի Ալեքսեևիչ Գլուխովսկի</li>
+                                <li>Հրատարակման տարեթիվ՝ 2007</li>
+                                <li>Մի շարք մրցանակների դափնեկիր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>17000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/matani.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold">Ջ․ Ռ․ Ռ․ Թոլքին․ <<Մատանիների տիրակալը>></a>
+                            </h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Մատանիների տիրակալը>> եռերգությունը՝ մեկ գրքով</li>
+                                <li>Հեղինակ՝ Ջոն Ռոնալդ Ռուել Թոլքին</li>
+                                <li>Հրատարակման տարեթիվ՝ 1954</li>
+                                <li>Ֆենթզի ժանրի ամենահայտնի գործը․ անհաս արվեստի արժեքներից։ Մի շարք մրցանակների դափնեկիր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>18000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="images/dazor.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <h6><a href="product.html" class="text-decoration-none font-weight-bold">Սերգեյ Լուկյանենկո․ <<Հսկումներ>></a>
+                            </h6>
+                            <ul class="d-none d-lg-block font-weight-bold">
+                                <li><<Հսկումներ>> վեց վեպից բաղկացած վիպաշարը՝ մեկ գրքով</li>
+                                <li>Հեղինակ՝ Սերգեյ Վասիլևիչ Լուկյանենկո</li>
+                                <li>Հրատարակման տարեթիվ՝ 1998-2014</li>
+                                <li>Մի շարք մրցանակների դափնեկիր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-5 text-danger font-weight-bold"><h2>13000 ֏</h2></div>
+                            <a href="cart.html" class="btn btn-primary m-2">Ավելացնել</a>
+                            <a href="product.html" class="btn btn-success m-2" role="button">Դիտել</a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="col-12 mt-2">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="">1</a></li>
+                        <li class="page-item"><a class="page-link" href="">2</a></li>
+                        <li class="page-item"><a class="page-link" href="">3</a></li>
+                        <li class="page-item"><a class="page-link" href="">4</a></li>
+                        <li class="page-item"><a class="page-link" href="">5</a></li>
+                        <li class="page-item"><a class="page-link" href="">...</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </main>
+    </div>
+    <div class="container-fluid">
+      <footer class="bg-dark">
+          <div class="row">
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">կապ</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">մեր ցանցը</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">առաքում</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">պայմաններ</a>
+            </div>        
+          </div>
+          <div class="row row-cols-5 bg-secondary m-0">
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 1</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 2</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a><br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a> <br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 3</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 4</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group5</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class=" card bg-dark text-white col-lg-12" >
+              <p>FIND US ON:</p>
+            </div>         
+            <div class="col-lg-6 col-sm-12 d-inline-block logo">
+              <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"></a>
+              <a href="https://www.instagram.com/" target="blank"><img src="images/instagram.png"></a>
+              <a href="https://www.twitter.com/" target="blank"><img src="images/twitter.png"></a>
+              <a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png"></a>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-inline-block text-white">
+              <p>TUMO CENTER FOR CREATIVE TECHNOLOGIES</p>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="verev tapancik">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Tel: </p>
+              </div>
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Բարի Գալուստ Գրքի Բում</p>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AM</option>
+                  <option value="RU">RU</option>
+                  <option value="EN">EN</option>
+                  <option value="EN">GR</option>
+                </select>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AMD</option>
+                  <option value="EN">RB</option>
+                  <option value="EN">US</option>
+                  <option value="EN">EUR</option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-info d-none d-lg-block col-lg-12">
+                  Կարգավորում
+                </button> 
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <a class="navbar-brand col-lg-2 col-2" href="index.html"><img src="images/book2.png" width="80px"><p></p></a>
+              <form class="form-inline d-none d-lg-block">
+                <input class="form-control mr-sm-2" type="search" placeholder="որոնել" aria-label="search">
+                <button class="btn btn-outline-success text-dark my-2 my-sm-0" type="submit">որոնել</button>
+              </form>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+                Մուտք կամ գրանցում
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog text-center">
+                  <div class="modal-content guyn1">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger" id="ModalLabel">Մուտք գործել անձնական էջ</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-center">
+                        <div class="form-group">
+                          <label for="formGroupInputModal-1">Մուտքանուն</label>
+                          <input type="text" class="form-control" id="formGroupInputModal-1" placeholder="Login">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupInputModal-2">Գաղտնաբառ</label>
+                          <input type="password" class="form-control" id="formGroupInputModal-2" placeholder="Password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                      <a href="Account.html" class="btn btn-primary m-2" role="button">Մուտք</a>
+
+                      <h5 class="text-center text-danger">Եթե նոր հաճախորդ եք, խնդրում ենք գրանցվել</h5>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal1">
+                        Գրանցում
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog text-center">
+                          <div class="modal-content guyn1">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-danger" id="ModalLabel1">Գրանցում</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="text-center">
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-1">Մուտքանուն</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-1" placeholder="Login">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-2">Գաղտնաբառ</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-3">Կրկնել գաղտնաբառը</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-3" placeholder="Repeat your password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Հեռախոսահամար</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-4" placeholder="Telephone number">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Ուղարկված ստուգիչ կոդը</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-4" placeholder="Code">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                              <a href="Account.html" class="btn btn-primary m-2" role="button">Գրանցվել և մտնել</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Գեղարվեստական 
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  </div>
+                </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ոչ գեղարվեստական
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ամսագրեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Օտար լեզվով
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Հին գրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Աուդիոգրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <div class="main-row1 alert alert-warning mt-3" id="alert" role="alert">
+          Կայքն ամբողջովին պատրաստ չէ, այդ պատճառով վճարման համակարգը չի աշխատում
+          <button type="button" class="close my-auto" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="row mb-4 justify-content-center no-gutters">
+          <div class="col-12">
+            <div id="Carousel1" class="carousel pb-5 pt-2" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel1" data-slide-to="1" class=""></li>
+                    <li data-target="#Carousel1" data-slide-to="2" class=""></li>
+                    <li data-target="#Carousel1" data-slide-to="3" class=""></li>
+                </ol>
+                <div class="carousel-inner bg-secondary">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3">
+                                <img src="images/vard.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-md-9 col-lg-4">
+                                <div class="carousel-caption text-center">
+                                    <h5>Ումբերտո Էկո․ Վարդի անունը</h5>
+                                    <h4>Վերջին օրինակները</h4>
+                                    <h3 class="text-warning">ՇՏԱՊԵՔ</h3>
+                                    <a href="cart1.html" class="btn btn-primary" role="button">Ավելացնել զամբյուղ</a>
+                                    <a href="product.html" class="btn btn-success" role="button">Դիտել ապրանքը</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3">
+                                <img src="images/amar.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-md-8 col-lg-4">
+                                <div class="carousel-caption text-center">
+                                    <h5>Լեոնիդ Ցիպկին․ Ամառը Բադենում</h5>
+                                    <h4>Վերջին օրինակները</h4>
+                                    <h3 class="text-warning">ՇՏԱՊԵՔ</h3>
+                                    <a href="cart1.html" class="btn btn-primary" role="button">Ավելացնել զամբյուղ</a>
+                                    <a href="product.html" class="btn btn-success" role="button">Դիտել ապրանքը</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3">
+                                <img src="images/inferno.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="carousel-caption text-center">
+                                    <h5>Դեն Բրաուն․ Ինֆեռնո</h5>
+                                    <h4>Վերջին օրինակները</h4>
+                                    <h3 class="text-warning">ՇՏԱՊԵՔ</h3>
+                                    <a href="cart1.html" class="btn btn-primary" role="button">Ավելացնել զամբյուղ</a>
+                                    <a href="product.html" class="btn btn-success" role="button">Դիտել ապրանքը</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3">
+                                <img src="images/catk.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="carousel-caption text-ceenter">
+                                    <h5>Խուլիո Կորտասար․ Ցատկախաղ</h5>
+                                    <h4>Վերջին օրինակները</h4>
+                                    <h3 class="text-warning">ՇՏԱՊԵՔ</h3>
+                                    <a href="cart1.html" class="btn btn-primary" role="button">Ավելացնել զամբյուղ</a>
+                                    <a href="product.html" class="btn btn-success" role="button">Դիտել ապրանքը</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#Carousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#Carousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-row3 mt-1">
+          <div class="row bg-light p-4">
+            <h1 class="col-12 text-uppercase text-center">ՕՐՎԱ ԶԵՂՉԵՐ (-15%)
+            </h1>
+            <div class="row">
+              <div class="card col-lg-2 col-md-4 col-6 m-auto">
+                <img src="images/eneakan.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="text-danger">5860 դրամ<br><del class="text-info">6900 դրամ</del></h5>
+                  <a href="cart1.html" class="btn btn-primary m-1">Ավելացնել</a>
+                  <a href="product.html" class="btn btn-success m-1" role="button">Դիտել</a>
+                </div>
+              </div>
+              <div class="card col-lg-2 col-md-4 col-6 m-auto">
+                <img src="images/inferno.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="text-danger">6630 դրամ<br><del class="text-info">7800 դրամ</del></h5>
+                  <a href="cart1.html" class="btn btn-primary m-1">Ավելացնել</a>
+                  <a href="product.html" class="btn btn-success m-1" role="button">Դիտել</a>
+                </div>
+              </div>
+              <div class="card col-lg-2 col-md-4 col-6 m-auto">
+                <img src="images/qing.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="text-danger">5610 դրամ<br><del class="text-info">6600 դրամ</del></h5>
+                  <a href="cart1.html" class="btn btn-primary m-1">Ավելացնել</a>
+                  <a href="product.html" class="btn btn-success m-1" role="button">Դիտել</a>
+                </div>
+              </div>
+              <div class="card col-lg-2 col-md-4 col-6 m-auto">
+                <img src="images/hoseyni.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="text-danger">5440 դրամ<br><del class="text-info">6400 դրամ</del></h5>
+                  <a href="cart1.html" class="btn btn-primary m-1">Ավելացնել</a>
+                  <a href="product.html" class="btn btn-success m-1" role="button">Դիտել</a>
+                </div>
+              </div>
+              <div class="card col-lg-2 col-md-4 col-6 m-auto">
+                <img src="images/li.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="text-danger">5000 դրամ<br><del class="text-info">5880 դրամ</del></h5>
+                  <a href="cart1.html" class="btn btn-primary m-1">Ավելացնել</a>
+                  <a href="product.html" class="btn btn-success m-1" role="button">Դիտել</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-row4 mt-3">
+          <div class="row bg-light">
+              <h1 class="col-12 text-center text-uppercase">Պահանջված ժանրեր
+              </h1>
+          </div>
+          <div class="row bg-light justify-content-center">
+            <div class="row row1 col-12 justify-content-center">
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-">
+                  <img src="images/hp4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Ֆենթզի</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/inferno.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Թրիլլեր</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-">
+                  <img src="images/vard.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Դետեկտիվ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/qing.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Սարսափ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/muracan.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Պատմավեպ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/es.png" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Սիրավեպ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row bg-light">
+              <h1 class="col-12 text-center text-uppercase">Օտար լեզուներով
+              </h1>
+            </div>
+            <div class="row row2 my-2 col-12 justify-content-center">
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/got.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Фентзи</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/kod.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Триллер</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/agata.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Детектив</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/drakula.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Ужас</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/filip.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Исторические</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 m-auto text-center">
+                <div class="card our-product-card bg-light">
+                  <img src="images/most.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-light pl-0 pr-0">
+                    <a class="btn-sm btn-warning mt-2 text-center" href="categories.html">Любовные</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="main-row5 mt-3">
+          <div class="row justify-content-center pb-4 mt-3">
+            <h4 class="font-weight-bold col-12 text-center mb-3 text-uppercase">նոր ապրանքներ</h4>
+            <div class="carousel w-100 slide" id="moreCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">դիտել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դրտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դրտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դրտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դրտել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <nav class="col mt-2">
+            <ul class="pagination justify-content-center cawrousel-indicators">
+                <li class="page-item">
+                    <a class="page-link" href="#moreCarousel" role="button" data-slide="prev">Previous</a>
+                </li>
+                <li data-target="#moreCarousel" data-slide-to="0" class="page-item"><a class="page-link" href="shop.html">1</a></li>
+                <li data-target="#moreCarousel" data-slide-to="1" class="page-item"><a class="page-link" href="shop.html">2</a></li>
+                <li data-target="#moreCarousel" data-slide-to="2" class="page-item"><a class="page-link" href="shop.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#moreCarousel" role="button" data-slide="next">Next</a>
+                </li>
+            </ul>
+        </nav>
+      </main>
+    </div>
+    <div class="container-fluid">
+      <footer class="bg-dark">
+          <div class="row">
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">կապ</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">մեր ցանցը</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">առաքում</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">պայմաններ</a>
+            </div>        
+          </div>
+          <div class="row row-cols-5 bg-secondary m-0">
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 1</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 2</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a><br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a> <br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 3</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 4</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group5</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class=" card bg-dark text-white col-lg-12" >
+              <p>FIND US ON:</p>
+            </div>         
+            <div class="col-lg-6 col-sm-12 d-inline-block logo">
+              <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"></a>
+              <a href="https://www.instagram.com/" target="blank"><img src="images/instagram.png"></a>
+              <a href="https://www.twitter.com/" target="blank"><img src="images/twitter.png"></a>
+              <a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png"></a>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-inline-block text-white">
+              <p>TUMO CENTER FOR CREATIVE TECHNOLOGIES</p>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

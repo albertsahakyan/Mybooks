@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/2f158531bd.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <!-- css.gg -->
+    <link href="https://css.gg/css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="verev tapancik">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Tel: </p>
+              </div>
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Բարի Գալուստ Գրքի Բում</p>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AM</option>
+                  <option value="RU">RU</option>
+                  <option value="EN">EN</option>
+                  <option value="EN">GR</option>
+                </select>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AMD</option>
+                  <option value="EN">RB</option>
+                  <option value="EN">US</option>
+                  <option value="EN">EUR</option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-info d-none d-lg-block col-lg-12">
+                  Կարգավորում
+                </button> 
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <a class="navbar-brand col-lg-2 col-2" href="index.html"><img src="images/book2.png" width="80px"><p></p></a>
+              <form class="form-inline d-none d-lg-block">
+                <input class="form-control mr-sm-2" type="search" placeholder="որոնել" aria-label="search">
+                <button class="btn btn-outline-success text-dark my-2 my-sm-0" type="submit">որոնել</button>
+              </form>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+                Մուտք կամ գրանցում
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog text-center">
+                  <div class="modal-content guyn1">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger" id="ModalLabel">Մուտք գործել անձնական էջ</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-center">
+                        <div class="form-group">
+                          <label for="formGroupInputModal-1">Մուտքանուն</label>
+                          <input type="text" class="form-control" id="formGroupInputModal-1" placeholder="Login">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupInputModal-2">Գաղտնաբառ</label>
+                          <input type="password" class="form-control" id="formGroupInputModal-2" placeholder="Password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                      <a href="Account.html" class="btn btn-primary m-2" role="button">Մուտք</a>
+
+                      <h5 class="text-center text-danger">Եթե նոր հաճախորդ եք, խնդրում ենք գրանցվել</h5>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal1">
+                        Գրանցում
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog text-center">
+                          <div class="modal-content guyn1">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-danger" id="ModalLabel1">Գրանցում</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="text-center">
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-1">Մուտքանուն</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-1" placeholder="Login">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-2">Գաղտնաբառ</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-3">Կրկնել գաղտնաբառը</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-3" placeholder="Repeat your password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Հեռախոսահամար</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-4" placeholder="Telephone number">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Ուղարկված ստուգիչ կոդը</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-4" placeholder="Code">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                              <a href="Account.html" class="btn btn-primary m-2" role="button">Գրանցվել և մտնել</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Գեղարվեստական 
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  </div>
+                </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ոչ գեղարվեստական
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ամսագրեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Օտար լեզվով
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Հին գրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Աուդիոգրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <nav aria-label="breadcrumb" class="row">
+          <ol class="breadcrumb mt-3 col mr-auto">
+              <li class="breadcrumb-item"><a href="categories.html">Օտար Լեզվով</a></li>
+              <li class="breadcrumb-item"><a href="categories.html">Ռուսերեն</a></li>
+              <li class="breadcrumb-item"><a href="categories.html">Գեղարվեստական</a></li>
+              <li class="breadcrumb-item"><a href="categories.html">Ֆենթզի</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><<Գահերի խաղը>></li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-primary font-weight-bold text-center"> Ջ․ Ռ․ Ռ․ Մարտին․ <<Գահերի խաղը>></h2>
+          </div>
+        </div>
+        <div class="row guyn1">
+            <div class="col-12 col-md-4 col-lg-6">
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-2">
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/gotdimac.jpg"><img class="img-fluid" src="images/gotdimac.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/gothetev.jpg"><img class="img-fluid" src="images/gothetev.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/gothast.jpg"><img class="img-fluid" src="images/gothast.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/gotkoxq.jpg"><img class="img-fluid" src="images/gotkoxq.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/gotej.jpg"><img class="img-fluid" src="images/gotej.jpg"></a>
+                    </div>
+                    <div class="col">
+                        <a class="" data-fancybox="gallery" href="images/gotdimac.jpg"><img class="img-fluid" src="images/gotdimac.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="font-weight-bold text-dark text-center mt-3 mb-2">10000 ֏</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a href="cart1.html" class="btn btn-primary">Ավելացնել զամբյուղ</a>
+                </div>
+                <table class="table table-striped mt-4">
+                  <tbody>
+                    <tr>
+                      <td>Հրատարակչություն</td>
+                      <td>АСТ</td>
+                    </tr>
+                    <tr>
+                      <td>Հրատարակվել է</td>
+                      <td>2018</td>
+                    </tr>
+                    <tr>
+                      <td>Ժանր</td>
+                      <td>Ֆանտաստիկա և ֆենթզի</td>
+                    </tr>
+                    <tr>
+                      <td>Տարիքային սահմանափակում</td>
+                      <td>16+</td>
+                    </tr>
+                    <tr>
+                      <td>Թղթի տեսակ</td>
+                      <td>Օֆսեթ</td>
+                    </tr>
+                    <tr>
+                      <td>Լեզու</td>
+                      <td>Ռուսերեն</td>
+                    </tr>
+                    <tr>
+                      <td>Կազմ</td>
+                      <td>Կոշտ</td>
+                    </tr>
+                    <tr>
+                      <td>Հեղինակ</td>
+                      <td>Ջորջ Ռ․ Ռ․ Մարտին</td>
+                    </tr>
+                    <tr>
+                      <td>Լայնություն</td>
+                      <td>14 սմ</td>
+                    </tr>
+                    <tr>
+                      <td>Էջերի քանակ</td>
+                      <td>784 հատ</td>
+                    </tr>
+                    <tr>
+                      <td>Բարձրություն</td>
+                      <td>21 սմ</td>
+                    </tr>
+                    <tr>
+                      <td>Քաշը փաթեթավորված վիճակում</td>
+                      <td>450 գրամ</td>
+                    </tr>
+                    <tr>
+                      <td>Հրատարակող երկիր</td>
+                      <td>Ռուսաստան</td>
+                    </tr>
+                  </tbody>
+                </table>                   
+            </div>
+            <div class="text-center mt-5 mb-5 mr-3 ml-3">
+              <h4 class="text-uppercase text-center text-danger">գրքի մասին</h4>                  
+              <p><<Սառույցի և կրակի երգ>> վիպաշարի առաջին մասը։ Գրքում տեղ գտած իրադարձությունները կատարվում են հորինված աշխարհում, որն իր տնտեսությամբ, մշակույթով և սոցիալական կառուցվածությամբ հիշեցնում է միջնադարյան Եվրոպան: Հիմնական իրադարձությունները կենտրոնացած են Վեստերոս մայրցամաքի վրա և մասնակիորեն Էսսոսում՝ ավելի արևելք գտնվող մայրցամաքում։ Վեստերոսի բարձր խավը կոչվում է <<Մեծ Առանձնատերեր>>, և տներից յուրաքանչյուրն ունի իր վասալներին, իր զորքը և որոշակիորեն անկախ է՝ որպես ենթաթագավորություն։ «Գահերի խաղ»-ի իրադարձություններից ուղիղ երեք հարյուր տարի առաջ Տարգարիենների արքայատոհմը, օգտագործելով երեք վիշապներ, գրավել էր Պատից (Շուրջ 700 ֆուտ բարձրությամբ մի քանի մղոն ձգվող շինությունից) մինչև Դորնի հյուսիսային ափեր հասնող ամբողջ տարածությունը և ստեղծել մի ամբողջ կայսրություն: Տարգարիենների տոհմը ծագել է Հին Վալիրիայից։ Գրքի համաձայն նրանցում հոսում է վիշապների արյուն։ Էյեգոնը ամուսնացել է իր քույրերի հետ, այդ ավանդույթը շատ հաճախ էր հանդիպում նրանց տոհմում։ Արքայատոհմը սկսվեց կործանվել, երբ սատկեցին վիշապները։ Իսկ թագավոր Էյերիս 2-րդի խելագարությունը նպաստեց ամպստամբության հաջողությանը: Բարատեոնները ծագել են Տարգարիեններից։ Փոթորիկի արքային տապալելուց հետո նրանք դարձան Փոթորկոտ սահմանի տիրակալները։ Սևահեր և ուժեղ Բարատեոնները երկար ժամանակ մնացին իշխող արքայատոհմին հավատարիմ։ Հակամարտության պատճառ դարձավ Ռոբերտ Բարատեոնի սիրեցյալը՝ Լիանա Սթարքը, ում գերևարել և բռնաբարել էր խելագար թագավորի որդին՝ Ռեյգար Տարգարիենը։ Սթարքերը, Բարատեոնները, Արրենները, Թալլիները և մի շարք տներ պատերազմ են սկսում Տարգարինների դեմ։ Այս շրջանը Վեստերոսի պատմիչներն անվանում են <<Ռոբերտի ապստամբություն>>։ Ապստամբությունից հետո Ռոբերտը նստում է գահին, բայց լինում է անպետք թագավոր։ Իրադարձությունները սկսվում են արքայի աջ ձեռքի՝ Ջոն Արենի մահվան բոթով, որից հետո աջ ձեռք է դառնում Էդարդ Սթարքը, ում որդին անհայտ պատճառներով ընկել է աշտարակից՝ դառնալով հաշմանդամ․․․
+              </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="accordion w-100" id="accordion2">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item" id="headingOne">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Փաստեր</a>
+                    </li>
+                    <li class="nav-item" id="headingTwo">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Հեղինակի մասին</a>
+                    </li>
+                    <li class="nav-item" id="headingThree">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Շարունակության մասին</a>
+                    </li>
+                </ul>
+                <div class="card">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p class="font-weight-bold">Կարևոր տվյալներ</p>
+                            <ul>
+                              <li><<Սառույցի և կրակի երգ>> վիպաշարի առաջին մասն է</li>
+                              <li>Հեղինակ՝ Ջորջ Ռեյմոնդ Ռիչարդ Մարտին</li>
+                              <li>Հրատարակման տարեթիվ՝ 1996</li>
+                              <li>Արժանացել է՝ <<Լոկուս>> մրցանակ, <Իգնոտուս>> մրցանակ և մի շարք այլ մրցանակներ</li>
+                            </ul>
+                            <p>Վեպը պատմվում է ինը հերոսների դեմքից։ Մարտինի ամենասիրելի հերոսը գաճաճ Տիրիոնն է: Նրան գրավիչ են դարձնում սրամտությունն ու բազմաարժեքությունը։ Ամենադժվար հերոսը եղել է Բրանը, քանի որ նա ամենաերիտասարդն էր բոլոր հերոսներից և միակը, ով տիրապետում էր կախարդական ունակությունների։</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+                      <p class="col-12">
+                        Ջորջ Ռեյմոնդ Ռիչարդ Մարտին (անգլ.՝ George Raymond Richard Martin, սեպտեմբերի 20, 1948, Bayonne, Նյու Ջերսի, ԱՄՆ), ամերիկացի ժամանակակից գրող-ֆանտաստ։ 1970-1980-ականներին ճանաչված է դարձել գիշերային ֆանտաստիկայի ժանրով գրված պատմվածքների և երկերի շնորհիվ։ Ամենաշատ հանրաճանաչությունը նրան բերել է 1996 թվականին լույս տեսած «Սառույցի և կրակի երգ» վեպային շարքը՝ ֆանտազիայի ժանրում։ Այն էկրանավորվել է HBO կինոընկերության կողմից հայտնի «Գահերի խաղ» հեռուստասերիալում։ Այս գրքերի շնորհիվ Մարտինը քննադատների կողմից անվանվեց «ամերիկյան Տոլկին»։ 2011 թվականին Time ամսագիրը Ջորջ Մարտինին ներառեց աշխարհում ամենաազդեցիկ մարդկանցով կազմված իր ցուցակում։
+                      </p>
+                   </div>
+                <div class="card">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                          <p class="font-weight-bold">«A Song of Ice and Fire» շարք / «Սառույցի և կրակի երգ»</p>
+                            <ul>
+                              <li>«A Game of Thrones» / «Գահերի խաղ (վեպ)», 1996</li>
+                              <li>«A Clash of Kings» / «Արքաների պատերազմը», 1998</li>
+                              <li>«A Storm of Swords» / «Թրերի մրրիկ», 2000</li>
+                              <li>«A Feast for Crows» / «Անգղների խրախճանք», 2005</li>
+                              <li>«A Dance with Dragons» / «Պար վիշապների հետ», 2011</li>
+                              <li>«The Winds of Winter» / «Ձմռան քամիներ», հրատարակված չէ</li>
+                              <li>«A Dream of Spring» / «Երազանք գարնան մասին», հրատարակված չէ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-4 mt-3">
+            <h4 class="font-weight-bold col-12 text-center mb-3">Ձեզ կարող է հետաքրքրել</h4>
+            <div class="carousel w-100 slide" id="moreCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը </h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                            <div class="card m-auto col-lg-3 col-md-6 col-6 text-center p-2">
+                                <img img="" src="images/vedmak.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Կախարդը</h5>
+                                    <h5 class="text-danger">19000 դրամ</h5>
+                                    <a href="product.html" class="btn btn-primary">Դիտել</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="col mt-2">
+                <ul class="pagination justify-content-center cawrousel-indicators">
+                    <li class="page-item">
+                        <a class="page-link" href="#moreCarousel" role="button" data-slide="prev">Previous</a>
+                    </li>
+                    <li data-target="#moreCarousel" data-slide-to="0" class="page-item"><a class="page-link" href="shop.html">1</a></li>
+                    <li data-target="#moreCarousel" data-slide-to="1" class="page-item"><a class="page-link" href="shop.html">2</a></li>
+                    <li data-target="#moreCarousel" data-slide-to="2" class="page-item"><a class="page-link" href="shop.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#moreCarousel" role="button" data-slide="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      </main>
+    </div>
+    <div class="container-fluid">
+      <footer class="bg-dark">
+          <div class="row">
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">կապ</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">մեր ցանցը</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">առաքում</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">պայմաններ</a>
+            </div>        
+          </div>
+          <div class="row row-cols-5 bg-secondary m-0">
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 1</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 2</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a><br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a> <br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 3</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 4</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group5</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class=" card bg-dark text-white col-lg-12" >
+              <p>FIND US ON:</p>
+            </div>         
+            <div class="col-lg-6 col-sm-12 d-inline-block logo">
+              <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"></a>
+              <a href="https://www.instagram.com/" target="blank"><img src="images/instagram.png"></a>
+              <a href="https://www.twitter.com/" target="blank"><img src="images/twitter.png"></a>
+              <a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png"></a>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-inline-block text-white">
+              <p>TUMO CENTER FOR CREATIVE TECHNOLOGIES</p>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!--  Fancybox JS  -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!--  custom JS  -->
+        <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

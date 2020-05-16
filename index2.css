@@ -1,0 +1,27 @@
+body{
+	background-color: #f1e3cb;
+}
+.verev {
+	background-image: url(images/th.jpg);
+}
+.tapancik{
+	background-color: rgba(0;0;0;0.3);
+}
+.guyn{
+	background-color: #565d47;
+}
+.nkarner{
+	background-image: url(images/sky.jpeg);
+}
+.logo img{
+	width: 30px;
+}
+.sirunfont1 {
+	font-family: 'Lobster', cursive;
+}
+.guyn1{
+	background-color: #ffd8a6;
+}
+.guyn2{
+	background-color: #f57b51;
+}

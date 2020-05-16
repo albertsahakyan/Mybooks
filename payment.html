@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/2f158531bd.js" crossorigin="anonymous"></script><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <!-- css.gg -->
+    <link href="https://css.gg/css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="verev tapancik">
+
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Tel: </p>
+              </div>
+              <div class="d-none d-lg-block col-lg-3">
+                <p class="font-weight-bold">Բարի Գալուստ Գրքի Բում</p>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AM</option>
+                  <option value="RU">RU</option>
+                  <option value="EN">EN</option>
+                  <option value="EN">GR</option>
+                </select>
+              </div>
+              <div class="d-sm-block col-lg-2 col-6">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>AMD</option>
+                  <option value="EN">RB</option>
+                  <option value="EN">US</option>
+                  <option value="EN">EUR</option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-info d-none d-lg-block col-lg-12">
+                  Կարգավորում
+                </button> 
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light">
+              <a class="navbar-brand col-lg-2 col-2" href="index.html"><img src="images/book2.png" width="80px"><p></p></a>
+              <form class="form-inline d-none d-lg-block">
+                <input class="form-control mr-sm-2" type="search" placeholder="որոնել" aria-label="search">
+                <button class="btn btn-outline-success text-dark my-2 my-sm-0" type="submit">որոնել</button>
+              </form>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+                Մուտք կամ գրանցում
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog text-center">
+                  <div class="modal-content guyn1">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger" id="ModalLabel">Մուտք գործել անձնական էջ</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-center">
+                        <div class="form-group">
+                          <label for="formGroupInputModal-1">Մուտքանուն</label>
+                          <input type="text" class="form-control" id="formGroupInputModal-1" placeholder="Login">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupInputModal-2">Գաղտնաբառ</label>
+                          <input type="password" class="form-control" id="formGroupInputModal-2" placeholder="Password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                      <a href="Account.html" class="btn btn-primary m-2" role="button">Մուտք</a>
+
+                      <h5 class="text-center text-danger">Եթե նոր հաճախորդ եք, խնդրում ենք գրանցվել</h5>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal1">
+                        Գրանցում
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog text-center">
+                          <div class="modal-content guyn1">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-danger" id="ModalLabel1">Գրանցում</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="text-center">
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-1">Մուտքանուն</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-1" placeholder="Login">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-2">Գաղտնաբառ</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-3">Կրկնել գաղտնաբառը</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-3" placeholder="Repeat your password">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Հեռախոսահամար</label>
+                                  <input type="password" class="form-control" id="formGroupInputModal1-4" placeholder="Telephone number">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupInputModal1-4">Ուղարկված ստուգիչ կոդը</label>
+                                  <input type="text" class="form-control" id="formGroupInputModal1-4" placeholder="Code">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Փակել</button>
+                              <a href="Account.html" class="btn btn-primary m-2" role="button">Գրանցվել և մտնել</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Գեղարվեստական 
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                    <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  </div>
+                </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ոչ գեղարվեստական
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ամսագրեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Օտար լեզվով
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Հին գրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Աուդիոգրքեր
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                  <a class="dropdown-item" href="categories.html">SubCategory</a>
+                </div>
+              </div>
+            </div>
+          </nav>  
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-danger font-weight-bold text-center m-3">Վճարում/ Քարտի տվյաներ, Առաքման հասցե</h2>
+          </div>
+        </div>
+        <div class="row guyn1 mb-3 p-4 text-center">
+          <div class="col-12 col-md-6 m-auto">
+            <h3>Քարտ</h3>
+            <form class="text-center">
+              <div class="form-group">
+                <label for="formGroupInput1">Բանկային քարտի համար</label>
+                <input type="number" class="form-control" id="formGroupInput1" placeholder="XXXX XXXX XXXX XXXX">
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput2">Քարտատիրոջ անուն-ազգանուն</label>
+                <input type="text" class="form-control" id="formGroupInput2" placeholder="Name/Surname">
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput3">Վավերականության ժամկետ</label>
+                <input type="text" class="form-control" id="formGroupInput2" placeholder="Month/Year">
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput4">Ստուգման կոդ</label>
+                <input type="number" class="form-control" id="formGroupInput2" placeholder="Security Code">
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-6 m-auto">
+            <h3>Հասցե</h3>
+            <form class="text-center">
+              <div class="form-group">
+                <label for="formGroupInput1">Երկիր/քաղաք/հասցե</label>
+                <input type="text" class="form-control" id="formGroupInput1" placeholder="Country/City/Address">
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput2">Անուն/Ազգանուն/Հայրանուն</label>
+                <input type="text" class="form-control" id="formGroupInput2" placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput3">Էլ․ փոստ կամ հեռախոսահամար</label>
+                <input type="text" class="form-control" id="formGroupInput2" placeholder="Email or phone number">
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput4">Փոստային ինդեքս</label>
+                <input type="number" class="form-control" id="formGroupInput2" placeholder="Postcode">
+              </div>
+            </form>
+          </div>
+          <div class="col-12">
+            <a href="cart1.html" class="btn btn-primary m-2">Վերադառնալ նախորդ էջ</a>
+            <a href="verify.html" class="btn btn-primary m-2">Հաստատել տվյալները</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="container-fluid">
+      <footer class="bg-dark">
+          <div class="row">
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">կապ</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">մեր ցանցը</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">առաքում</a>
+            </div>
+            <div class="col-lg-3 border text-center">
+              <a href="#" class="navbar-brand text-uppercase text-light">պայմաններ</a>
+            </div>        
+          </div>
+          <div class="row row-cols-5 bg-secondary m-0">
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 1</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 2</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a><br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a> <br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 3</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group 4</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a>  <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none d-md-block d-none text-center">
+              <div class="card">
+                <div class="card-body bg-secondary">
+                  <p class="font-italic text-light">Link Group5</p>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 1</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 2</a> <br>
+                  <a href="" class="navbar-brand text-uppercase text-light">Link 3</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class=" card bg-dark text-white col-lg-12" >
+              <p>FIND US ON:</p>
+            </div>         
+            <div class="col-lg-6 col-sm-12 d-inline-block logo">
+              <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"></a>
+              <a href="https://www.instagram.com/" target="blank"><img src="images/instagram.png"></a>
+              <a href="https://www.twitter.com/" target="blank"><img src="images/twitter.png"></a>
+              <a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png"></a>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-inline-block text-white">
+              <p>TUMO CENTER FOR CREATIVE TECHNOLOGIES</p>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!--  Fancybox JS  -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!--  custom JS  -->
+        <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
